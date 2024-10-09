@@ -4,14 +4,14 @@ def list_materias() -> list[str]:
     L_materias = []
     cnt = 0
 
-    Nombre_Materia = input("Ingresa el nombre de una de las materias cuyo promedio ponderado deseas hallar: ")
+    Nombre_Materia = input("Ingresa el nombre de una materia para ponderar sus notas: ")
 
     while Nombre_Materia not in ["LISTO", "listo", "Listo", "lISTO"]:
         cnt += 1
         L_materias.append(f"Materia {cnt}: {Nombre_Materia}")
-        Nombre_Materia = input("Ingresar el nombre de otra materia o continuar al siguiente paso ingresando 'LISTO': ")
-    else:
-        return L_materias
+        Nombre_Materia = input("Ingresar otra materia o avanzar ingresando 'LISTO': ")
+    print("\n\n")
+    return L_materias
     
 def obtener_num_de_notas(materias:list) -> list[str]:
     """Pregunta al usuario el número de notas para cada materia, en orden de la lista de materias"""
@@ -19,12 +19,13 @@ def obtener_num_de_notas(materias:list) -> list[str]:
     sorteado_materias_num_notas = []
     
     for materia in materias:
-        n_notas = int(input(f"Ingresa el número de notas que hay en la materia '{materia}': "))
+        n_notas = int(input(f'Ingresa el número de notas en "{materia}": '))
+        print("\n")
         sorteado_materias_num_notas.append(n_notas)
  
     return sorteado_materias_num_notas
 
-def promediar_materia(n_notas:int, materia:str) -> float:
+def promediar_materia(n_notas: int, materia: str) -> float:
     """
     Función que dada una cantidad de notas de una materia, registra para cada una su ponderación y la calificación correspondiente.
     Devuelve el promedio ponderado a partir de dicha información.
@@ -33,14 +34,19 @@ def promediar_materia(n_notas:int, materia:str) -> float:
     total_ponderacion = 0
     suma_ponderada = 0
 
-    #Esta condicional evita que se haga un división de cero cuando se especifica la cantidad de 0 notas para una materia
+    # Esta condicional evita que se haga una división por cero cuando se especifica la cantidad de 0 notas para una materia
     if n_notas > 0:
-        ponderaciones_calificaciones = [(
-            float(input(f"Ponderación de la nota {i + 1}, para '{materia}': ")),
-            float(input(f"Del 0 al 100, ingresa la calificación obtenida en la nota {i + 1}, para '{materia}': "))) for i in range(n_notas)]
+        # Usamos listas en lugar de tuplas
+        ponderaciones_calificaciones = [
+            [
+                float(input(f'Ingresa la ponderación decimal de la nota {i + 1}, en la materia "{materia}"')),
+                float(input(f"Ingresa la calificación de 0 a 100 que fue obtenida para esta nota: "))
+            ] for i in range(n_notas)
+        ]
         
-        suma_ponderada = sum([(i[0]*i[1]) for i in ponderaciones_calificaciones])
-        total_ponderacion = sum([(i[0]) for i in ponderaciones_calificaciones])
+        # Cálculo de la suma ponderada y el total de ponderaciones
+        suma_ponderada = sum([nota[0] * nota[1] for nota in ponderaciones_calificaciones])
+        total_ponderacion = sum([nota[0] for nota in ponderaciones_calificaciones])
 
         promedio_ponderado = suma_ponderada / total_ponderacion
         return f"{promedio_ponderado:.2f}"
@@ -51,4 +57,5 @@ def promediar_materia(n_notas:int, materia:str) -> float:
 lista_De_Materias = list_materias()
 lista_de_N_de_Notas = obtener_num_de_notas(lista_De_Materias)
 for i in range(len(lista_de_N_de_Notas)):
-    print(f"El promedio ponderado para la materia '{lista_De_Materias[i]}' es de {promediar_materia(n_notas=lista_de_N_de_Notas[i], materia=lista_De_Materias[i])}")
+    print(f'"{lista_De_Materias[i]}" tiene un promedio ponderado de {promediar_materia(n_notas=lista_de_N_de_Notas[i], materia=lista_De_Materias[i])}')
+    print("\n")
