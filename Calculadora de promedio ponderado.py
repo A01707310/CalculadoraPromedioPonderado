@@ -2,7 +2,7 @@
 **Situación problema**
 Tienes cuatro clases: Matemáticas, Física, Química y Literatura. Cada una tiene diferentes ponderaciones (Matemáticas 40%, Física 30%, Química 20% y Literatura 10%).
 Usando una calculadora de promedio ponderado, deberás ingresar tus calificaciones de cada materia y las ponderaciones correspondientes para obtener tu promedio final,
-que se guardará en un registro.
+que podría guardarse en un registro.
 """
 
 def list_materias() -> list[str]:
