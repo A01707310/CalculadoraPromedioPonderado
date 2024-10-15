@@ -1,0 +1,8 @@
+Sub-Competencia: componente: plantea una situación problema que le permite aplicar y demostrar sus conocimientos de programación (avance 1)
+
+Error original: no había una situación problema en el repositorio actual porque no existía este repositorio porque cambié de idea (había esta situación problema en el anterior repositorio ya eliminado).
+
+Cambio realizado: Cree el repositorio y con este su situación problema. Además añadí la situación problema como un comentario multilínea dentro del código.
+
+Líneas de código donde se ve la corrección: 1-6
+
