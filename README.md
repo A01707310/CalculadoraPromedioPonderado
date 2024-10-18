@@ -8,6 +8,7 @@ Tienes cuatro clases: Matemáticas, Física, Química y Literatura. Cada una tie
 **Instrucciones**
 
 Descargar el archivo y correr desde la terminal con 
+
 `python pponderado.py`
 
 Ingresar los datos requeridos RESPETANDO el tipo de dato solicitado, dentro del rango solicitado. Si el archivo de registro se generó exitosamente, será dentro de la misma carpeta en que se ejecuta el código. 
