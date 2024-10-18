@@ -15,6 +15,7 @@ Tienes cuatro clases: Matemáticas, Física, Química y Literatura. Cada una tie
 Descargar el archivo y correr desde la terminal (estando dentro de la misma carpeta que el archivo) con 
 
 `python "Calculadora de promedio ponderado.py"`
+
 o abrir en Thonny y dar click sobre el botón de play.
 
 Ingresar los datos requeridos RESPETANDO el tipo de dato solicitado, dentro del rango solicitado. Si el archivo de registro se generó exitosamente, será dentro de la misma carpeta en que se ejecuta el código. 
