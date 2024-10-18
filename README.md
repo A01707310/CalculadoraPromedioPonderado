@@ -2,8 +2,11 @@
 Eficiente ***calculadora de promedio ponderado*** que te permitirá conocer tus calificaciones. Puedes añadir tus clases y para cada clase asignar **ponderaciones** específicas, finalmente las calificaciones se guardarán en un registro.
 
 **Situación problema**
-
-Tienes cuatro clases: Matemáticas, Física, Química y Literatura. Cada una tiene diferentes ponderaciones (Matemáticas 40%, Física 30%, Química 20% y Literatura 10%). Usando una calculadora de promedio ponderado, deberás ingresar tus calificaciones de cada materia y las ponderaciones correspondientes para obtener tu promedio final, que se guardará en un registro.
+Tienes tres clases: Matemáticas, Física y Química y quieres conocer el
+promedio ponderado para cada una, usando esta calculadora de promedio
+ponderado, deberás ingresar las notas de cada materia y las ponderaciones
+correspondientes a dichas notas para obtener tu promedio ponderado de cada
+materia, que podría guardarse en un registro.
 
 **Componentes Extra**
 - Se hizo uso de `try` a la hora de guardar el archivo, avisando en consola en caso de una excepción. (8. Errors and Exceptions, n.d.) 
