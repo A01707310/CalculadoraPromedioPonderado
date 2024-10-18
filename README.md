@@ -20,7 +20,8 @@ o abrir en Thonny y dar click sobre el botón de play.
 
 Ingresar los datos requeridos RESPETANDO el tipo de dato solicitado, dentro del rango solicitado. Si el archivo de registro se generó exitosamente, será dentro de la misma carpeta en que se ejecuta el código. 
 
-Referencias: 
+**Referencias:**
+
 7. Input and output. (n.d.-b). Python Documentation. https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 7. Input and output. (n.d.). Python Documentation. https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting
 8. Errors and exceptions. (n.d.). Python Documentation. https://docs.python.org/3/tutorial/errors.html#handling-exceptions
