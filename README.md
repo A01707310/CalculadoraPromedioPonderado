@@ -2,6 +2,7 @@
 Eficiente ***calculadora de promedio ponderado*** que te permitirá conocer tus calificaciones. Puedes añadir tus clases y para cada clase asignar **ponderaciones** específicas, finalmente las calificaciones se guardarán en un registro.
 
 **Situación problema**
+
 Tienes tres clases: Matemáticas, Física y Química y quieres conocer el
 promedio ponderado para cada una, usando esta calculadora de promedio
 ponderado, deberás ingresar las notas de cada materia y las ponderaciones
