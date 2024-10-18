@@ -5,6 +5,11 @@ Eficiente ***calculadora de promedio ponderado*** que te permitirá conocer tus 
 
 Tienes cuatro clases: Matemáticas, Física, Química y Literatura. Cada una tiene diferentes ponderaciones (Matemáticas 40%, Física 30%, Química 20% y Literatura 10%). Usando una calculadora de promedio ponderado, deberás ingresar tus calificaciones de cada materia y las ponderaciones correspondientes para obtener tu promedio final, que se guardará en un registro.
 
+**Componentes Extra**
+- Se hizo uso de try a la hora de guardar el archivo, avisando en consola en caso de una excepción
+- Se hizo uso de f-strings para manejar algunas cadenas de manera más eficiente
+- Se hizo uso de operaciones con archivos, a la hora de intentar registrar los promedios dentro de un archivo. 
+
 **Instrucciones**
 
 Descargar el archivo y correr desde la terminal (estando dentro de la misma carpeta que el archivo) con 
